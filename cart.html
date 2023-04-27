@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+    <header>
+        <a class="shop-name" href="index.html">
+            <h1 class="mx-3 text-uppercase">Pizza Catalog</h1>
+        </a>
+        <nav class="mx-3">
+            <ul class="position-relative">
+                <li class="box-cart"><a href="cart.html"><img class="icon-cart" src="img/cart.svg" alt=""></a></li>
+                <span id="cartAmount" class="cartAmount">0</span>
+            </ul>
+        </nav>
+    </header>
+    <div id="label" class="text-center"></div>
+
+    <div class="shopping-cart" id="shopping-cart"></div>
+</body>
+<script src="src/data.js"></script>
+<script src="src/cart.js"></script>
+</html>

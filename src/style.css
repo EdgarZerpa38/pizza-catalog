@@ -1,0 +1,252 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #ccc;
+}
+header {
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+/*General Settings*/
+.container{
+  width: 80%;
+  margin: 0 auto;
+}
+.justify-content-center{
+  justify-content: center;
+}
+.d-flex{
+  display: flex;
+}
+.d-none{
+  display: none;
+}
+.text-center{
+  text-align: center;
+}
+.text-uppercase{
+  text-transform: uppercase;
+}
+.img-fluid{
+  max-width: 100%;
+  height: auto;
+}
+.w-100{
+  width: 100%;
+}
+.col-4{
+  flex: 0 0 auto;
+  width: 33.33333333%;
+}
+.p-1{
+  padding: 0.25rem;
+}
+.p-2{
+  padding: 0.5rem;
+}
+.m-1{
+  margin: 0.25rem;
+}
+.mx-1{
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+.m-2{
+  margin: 0.5rem;
+}
+.mx-3{
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
+.shadow{
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;;
+}
+.border-5{
+  border-radius: 5px;
+}
+.object-fit-cover{
+  object-fit: cover;
+}
+.fw-bolder{
+  font-weight: bolder;
+}
+.position-relative{
+  position: relative;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+}
+nav li {
+  margin: 0 10px;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+}
+main {
+  padding: 20px;
+}
+section {
+  margin-bottom: 20px;
+}
+h2 {
+  font-size: 24px;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+li {
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+/**/
+.img-pizza{
+  width: 100%;
+  min-width: 300px;
+}
+.extras, .close-extras {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.pizza-details {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+.box-pizza{
+  max-width: 450px;
+  background-color: #fff;
+}
+.buttons{
+  display: flex;
+  justify-content: end;
+}
+.btn-quantity{
+  display: flex;
+  align-items: center;
+}
+.icon-quantity{
+  width: 20px;
+  height: auto;
+  cursor: pointer;
+}
+.icon-cart{
+  width: 20px;
+  height: auto;
+}
+.box-cart{
+  background-color: #fff;
+  border-radius: 10px;
+  border: none;
+}
+.cartAmount{
+  position: absolute;
+  top: -25px;
+  right: -10px;
+  background-color: red;
+  padding: 10px;
+  border-radius: 10px;
+}
+.shop-name{
+  text-decoration: none;
+  color: #fff;
+}
+.ingredients-pizza li{
+  padding: 10px;
+}
+.shop{
+  display: flex;
+  justify-content: center;
+}
+/*Cart*/
+.btn-back{
+  display: inline-block;
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+.icon-x{
+  width: 20px;
+  height: auto;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.cart-item{
+  display: flex;
+  justify-content: space-between;
+  width: 600px;
+  margin: 0 auto;
+  border: 1px solid #000;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #fff;
+}
+.cart-details{
+  position: relative;
+  width: 100%;
+  padding: 10px;
+}
+.checkout{
+  border: none;
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+}
+.removeAll{
+  border: none;
+  background-color: red;
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+}
+.total-price{
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+/*Media Query*/
+@media screen and (max-width: 767px){
+  .cart-item{
+    display: block;
+    width: 80%;
+  }
+  .cart-details{
+    width: auto;
+  }
+  .extras{
+    width: 100%;
+  }
+  .shop{
+    display: block;
+  }
+  .box-pizza{
+    max-width: 100%;
+  }
+  .col-4{
+    width: auto;
+  }
+}
